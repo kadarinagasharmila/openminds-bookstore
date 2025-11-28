@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Minds Bookstore</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: url("pp.jpg")
+                       no-repeat center center/cover;
+            position: relative;
+        }
+
+        /* dark fade just like Netflix */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /*background: rgba(10, 10, 10, 0.75);*/
+        }
+
+        /* content center */
+        .content {
+            position: relative;
+            z-index: 10;
+            color: rgb(22, 21, 21);
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 20px;
+        }
+
+        .content h1 {
+            font-size: 3.6rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        /* Netflix vibe red button */
+        .btn {
+            background: #e50914;
+            padding: 15px 40px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.3rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #b20710;
+        }
+
+        /* small screens */
+        @media(max-width: 600px) {
+            .content h1 {
+                font-size: 2.5rem;
+            }
+            .content p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>Open Minds Bookstore</h1>
+        <p>Unlimited knowledge. Endless stories. Read anytime, anywhere.</p>
+        <a href="index.php" class="btn">Get Started</a>
+    </div>
+
+</body>
+</html>
